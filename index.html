@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chats|Cocoa</title>
-    <link href="./styles.css" rel="stylesheet" />
-    <style>
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <style>
       body,
       html {
         height: 100%;
         margin: 0;
         padding: 0;
       }
-    </style>
+    </style> -->
     <script
       src="https://kit.fontawesome.com/2d26018d36.js"
       crossorigin="anonymous"
@@ -51,18 +51,24 @@
     <main class="chats">
       <a href="chat.html">
         <ul class="chats__list">
-          <li class="chats__list-item chat">
-            <div class="chat__column">
-              <img class="chat__avartar g-avatar" src="images/avatar.png" />
-              <div class="chat__content">
-                <span class="chat__username">Bravo</span>
-                <span class="chat__preview">Going home</span>
-              </div>
+        <li class="chats__chat friend friend--lg">
+          <div class="friend__column">
+            <img src="images/avatar.png" class="m-avatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Lynn
+              </span>
+              <span class="friend__bottom-text">
+                nomade.co
+              </span>
             </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+          </div>
+          <div class="friend__column">
+              <span class="chat__timestamp"> March 8</span>
+
             </div>
-          </li>
+          </div>
+        </li>
         </ul>
       </a>
     </main>
@@ -75,6 +81,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+          <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
