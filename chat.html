@@ -6,68 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Chat|Cocoa</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+
     <script
       src="https://kit.fontawesome.com/2d26018d36.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <div class="header__back-btn">
-          <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-          </a>
+  <body class="chat-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
         </div>
-        <h1 class="header__title">Best Friend</h1>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
-    <main class="chat">
-      <span class="chat__timestamp">Friday, January 11, 2019</span>
+      <header class="header">
+        <div class="header__header-column">
+          <div class="header__back-btn">
+            <a href="index.html">
+              <i class="fas fa-arrow-left"></i>
+            </a>
+          </div>
+          <h1 class="header__title">Best Friend</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
+    </div>
+    <main class="chat-screen">
+        <div class="chat__timestamp-container">
+        <div class="chat__timestamp-bar"></div>
+        <span class="chat__timestamp">Friday, January 11, 2019</span>
+        <div class="chat__timestamp-bar"></div>
+        </div>
       <ul class="chat__messages">
+
         <li class="incoming-message message">
           <img src="images/avatar.png" class="message-avatar" />
           <div class="message__content">
+            <span class="message__bubble">Congrats I love you!</span>
             <span class="message__author">Best Friend</span>
-            <div class="message__bubble">Congrats I love you!</div>
           </div>
           <span class="message__timestamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <div class="message__content">
             <span class="message__timestamp"></span>
-            <div class="message__bubble">Thank you see you soon!</div>
+            <span class="message__bubble">Thank you see you soon!</span>
           </div>
         </li>
       </ul>
+      <ul class="chat__messages">
+
+        <li class="incoming-message message">
+          <img src="images/avatar.png" class="message-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">Congrats I love you!</span>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <div class="message__content">
+            <span class="message__timestamp"></span>
+            <span class="message__bubble">Thank you see you soon!</span>
+          </div>
+        </li>
+      </ul>
+
     </main>
     <div class="chat__write">
       <div class="chat__write-column"><i class="far fa-plus-square"></i></div>
